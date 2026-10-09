@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Empório dos Grãos BM – Produtos Naturais</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon"><i class="fas fa-seedling"></i></div>
+        <div class="logo-text">
+          <span class="logo-name">Empório dos Grãos <strong>BM</strong></span>
+          <span class="logo-slogan">Servindo saúde para você!</span>
+        </div>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#produtos">Sementes</a></li>
+          <li><a href="#farinhas">Farinhas</a></li>
+          <li><a href="#castanhas">Castanhas</a></li>
+          <li><a href="#graos">Grãos</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar" id="searchBar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="Buscar produto…" autocomplete="off" aria-label="Buscar produto" />
+        <button class="search-clear" id="searchClear" aria-label="Limpar busca">✕</button>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag"><i class="fas fa-leaf"></i> 100% Natural</p>
+      <h1>Saúde e sabor<br />na sua mesa</h1>
+      <p class="hero-sub">Grãos, sementes, cereais e produtos naturais selecionados com cuidado para o bem-estar da sua família.</p>
+      <div class="hero-btns">
+        <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+        <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+      </div>
+    </div>
+    <div class="hero-badges">
+      <div class="badge"><i class="fas fa-check-circle"></i> Sem conservantes</div>
+      <div class="badge"><i class="fas fa-check-circle"></i> Alta qualidade</div>
+      <div class="badge"><i class="fas fa-check-circle"></i> Entrega local</div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-img">
+          <div class="sobre-img-box">
+            <img src="imagens/logo-loja.png" alt="Logo do Empório dos Grãos BM" />
+          </div>
+          <div class="sobre-stat">
+            <strong>+500</strong>
+            <span>Produtos</span>
+          </div>
+          <div class="sobre-stat s2">
+            <strong>+5</strong>
+            <span>Anos de tradição</span>
+          </div>
+        </div>
+        <div class="sobre-text">
+          <p class="section-tag">Quem somos</p>
+          <h2>Tradição e qualidade<br />em cada grão</h2>
+          <p>O <strong>Empório dos Grãos BM</strong> nasceu da paixão por uma alimentação mais saudável e natural. Trabalhamos com os melhores fornecedores para trazer até você grãos, cereais, sementes, farinhas e muito mais — sempre frescos e com procedência garantida.</p>
+          <p>Nossa missão é facilitar o acesso a produtos naturais de qualidade, contribuindo para uma vida mais saudável e equilibrada.</p>
+          <div class="sobre-features">
+            <div class="feature"><i class="fas fa-award"></i> Qualidade certificada</div>
+            <div class="feature"><i class="fas fa-truck"></i> Entrega rápida</div>
+            <div class="feature"><i class="fas fa-heart"></i> Feito com amor</div>
+            <div class="feature"><i class="fas fa-shield-alt"></i> Produto seguro</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEMENTES ===== -->
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <p class="section-tag center">Nosso Catálogo</p>
+      <h2 class="center">Sementes</h2>
+      <p class="section-sub center">Sementes e grãos selecionados com qualidade para a sua saúde</p>
+
+      <div class="filtros">
+        <button class="filtro active" data-cat="todos">Todos</button>
+        <button class="filtro" data-cat="sementes">Sementes</button>
+      </div>
+
+      <div class="produtos-grid" id="produtosGrid">
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/chia.jpg" alt="Semente de Chia" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Semente de Chia</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em ômega-3, fibras e proteínas vegetais. Auxilia na saciedade e saúde intestinal.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 4,99</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/girassol.jpg" alt="Semente de Girassol" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Semente de Girassol</h3>
+            <span class="card-variante">100g</span>
+            <p>Fonte de vitamina E e gorduras boas. Ótima para lanches e receitas naturais.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 4,50</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/abobora.jpg" alt="Semente de Abóbora" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Semente de Abóbora</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em zinco e magnésio. Fortalece a imunidade e apoia a saúde masculina.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 9,50</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/gergelim-preto.jpg" alt="Gergelim Preto c/ Casca" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Gergelim Preto c/ Casca</h3>
+            <span class="card-variante">100g</span>
+            <p>Alto teor de cálcio e antioxidantes. Potente para saúde dos ossos e cabelos.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 4,80</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/gergelim-branco.jpg" alt="Gergelim Branco s/ Casca" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Gergelim Branco s/ Casca</h3>
+            <span class="card-variante">100g</span>
+            <p>Sabor suave e versátil. Excelente fonte de cálcio e gorduras saudáveis.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 2,99</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/gergelim-branco-casca.jpg" alt="Gergelim Branco c/ Casca" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Gergelim Branco c/ Casca</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em cálcio e gorduras saudáveis. Ideal para pães, saladas e pratos naturais.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 4,50</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/linhaca-dourada.jpg" alt="Linhaça Dourada" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Linhaça Dourada</h3>
+            <span class="card-variante">100g</span>
+            <p>Sabor mais suave. Rica em ômega-3 e lignanas, equilibra hormônios femininos.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 2,99</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="sementes">
+          <div class="card-img">
+            <img src="imagens/linhaca-marrom.jpg" alt="Linhaça Marrom" loading="lazy" />
+            <span class="card-cat-pill">Sementes</span>
+          </div>
+          <div class="card-body">
+            <h3>Linhaça Marrom</h3>
+            <span class="card-variante">100g</span>
+            <p>Versão tradicional, casca mais resistente. Excelente para o coração e intestino.</p>
+            <div class="card-preco">
+              <span class="preco-valor">R$ 2,99</span>
+              <span class="preco-unid">a cada 100g</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FARINHAS ===== -->
+  <section id="farinhas" class="produtos">
+    <div class="container">
+      <p class="section-tag center">Nosso Catálogo</p>
+      <h2 class="center">Farinhas &amp; Pós Naturais</h2>
+      <p class="section-sub center">Produtos selecionados para uma alimentação natural e saudável</p>
+
+      <div class="filtros">
+        <button class="filtro active" data-cat="todos-f">Todos</button>
+        <button class="filtro" data-cat="farinhas">Farinhas</button>
+        <button class="filtro" data-cat="proteinas">Proteínas</button>
+        <button class="filtro" data-cat="cereais">Cereais &amp; Outros</button>
+        <button class="filtro" data-cat="especiarias">Especiarias</button>
+      </div>
+
+      <div class="produtos-grid" id="farinhsGrid">
+
+        <!-- FARINHAS -->
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-coco.webp" alt="Farinha de Coco" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Coco</h3>
+            <span class="card-variante">100g</span>
+            <p>Sem glúten, rica em fibras. Ideal para receitas low carb e funcionais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-amendoim.webp" alt="Farinha de Amendoim" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Amendoim</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em proteínas e gorduras boas. Ótima para vitaminas e receitas fitness.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-amendoa.webp" alt="Farinha de Amêndoa" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Amêndoa</h3>
+            <span class="card-variante">100g</span>
+            <p>Sem glúten, baixo carboidrato. Perfeita para bolos, biscoitos e massas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 13,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-linhaca.webp" alt="Farinha de Linhaça" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Linhaça</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em ômega-3 e fibras. Auxilia no equilíbrio hormonal e saúde intestinal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-banana-verde.webp" alt="Farinha de Banana Verde" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Banana Verde</h3>
+            <span class="card-variante">100g</span>
+            <p>Alto índice de amido resistente. Prebiótica, controla a glicemia e sacia.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-arroz.webp" alt="Farinha de Arroz" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Arroz</h3>
+            <span class="card-variante">100g</span>
+            <p>Sem glúten, leve e versátil. Substituta da farinha de trigo em receitas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,80</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha-arroz-integral.webp" alt="Farinha de Arroz Integral" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Arroz Integral</h3>
+            <span class="card-variante">100g</span>
+            <p>Mais nutritiva, rica em fibras e minerais. Ideal para pães e bolos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,80</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- Novas farinhas -->
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha de batata doce.jpg" alt="Farinha de Batata Doce" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Batata Doce</h3>
+            <span class="card-variante">100g</span>
+            <p>Sem glúten, rica em betacaroteno e fibras. Ótima para receitas fitness.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha de beringela.jpg" alt="Farinha de Berinjela" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Berinjela</h3>
+            <span class="card-variante">100g</span>
+            <p>Auxilia no controle do colesterol e glicemia. Fonte de fibras e antioxidantes.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 8,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha de maracujá.webp" alt="Farinha de Maracujá" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Maracujá</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em pectina, controla a glicemia e promove saciedade. Diurética natural.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farinha de aveia.jpg" alt="Farinha de Aveia" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Aveia</h3>
+            <span class="card-variante">100g</span>
+            <p>Versátil e nutritiva, substitui a farinha de trigo em receitas saudáveis.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/farelo de aveia.jpg" alt="Farelo de Aveia" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farelo de Aveia</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em fibras solúveis, reduz colesterol e melhora a saúde intestinal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- PÓS (categoria farinhas) -->
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Beterraba em PO.jpg" alt="Beterraba em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Beterraba em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Fonte de energia rápida, combate cansaço físico e mental. Rico em nitratos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 11,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Farinha de Uva.jpg" alt="Farinha de Uva" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Uva</h3>
+            <span class="card-variante">100g</span>
+            <p>Antioxidante poderoso, combate o envelhecimento precoce e protege as células.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 6,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Açaí em Pó.webp" alt="Açaí em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Açaí em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Superalimento antioxidante, energizante natural e anti-inflamatório.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 12,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Guaraná Puro.webp" alt="Guaraná Puro" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Guaraná Puro</h3>
+            <span class="card-variante">100g</span>
+            <p>Estimulante natural, aumenta o foco, disposição e desempenho físico.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 22,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Catuaba em Pó.webp" alt="Catuaba em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Catuaba em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Afrodisíaco natural, estimula o sistema nervoso e combate o cansaço.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Marapuama em Pó.webp" alt="Marapuama em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Marapuama em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Tônico natural, melhora a libido, memória e disposição física.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Matcha.jpg" alt="Matcha" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Matcha</h3>
+            <span class="card-variante">100g</span>
+            <p>Chá verde em pó, rico em antioxidantes. Aumenta o foco e metabolismo.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 13,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Moringa em Pó.jpg" alt="Moringa em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Moringa em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Superalimento rico em vitaminas e minerais. Fortalece imunidade e energia.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Chlorella em Pó.jpg" alt="Chlorella em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Chlorella em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Alga verde detoxificante, rica em clorofila e proteínas. Depura o sangue.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 29,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Spirulina em Pó.webp" alt="Spirulina em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Spirulina em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína completa de alga azul-verde. Rica em ferro, vitaminas e aminoácidos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 18,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Maca Peruana.jpg" alt="Maca Peruana" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Maca Peruana</h3>
+            <span class="card-variante">100g</span>
+            <p>Adaptógeno natural, aumenta a libido, disposição e equilíbrio hormonal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 16,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Maca Peruana Vermelha.webp" alt="Maca Peruana Vermelha" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Maca Peruana Vermelha</h3>
+            <span class="card-variante">100g</span>
+            <p>Versão mais potente, indicada para vitalidade, libido e resistência.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 39,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Maca Peruana Negra.jpg" alt="Maca Peruana Negra" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Maca Peruana Negra</h3>
+            <span class="card-variante">100g</span>
+            <p>A mais rara das macas, potencializa o desempenho físico e cognitivo.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 39,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Gengibre em Pó.jpg" alt="Gengibre em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Gengibre em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Anti-inflamatório natural, melhora a digestão, imunidade e circulação.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Hibisco em Pó.webp" alt="Hibisco em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Hibisco em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Diurético natural, auxilia no controle do colesterol e pressão arterial.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 10,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Chá Verde em Pó.jpg" alt="Chá Verde em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Chá Verde em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Termogênico natural, antioxidante e auxiliar no emagrecimento.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 6,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Colágeno em Pó.webp" alt="Colágeno em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Colágeno em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Auxilia na saúde da pele, cabelos, unhas e articulações.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 16,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Laranja Moro em Pó.jpg" alt="Laranja Moro em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Laranja Moro em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Auxilia na redução de gordura abdominal e no controle glicêmico.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 11,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Ginkgo Biloba.jpg" alt="Ginkgo Biloba" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Ginkgo Biloba</h3>
+            <span class="card-variante">100g</span>
+            <p>Melhora a memória, concentração e circulação sanguínea cerebral.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 7,60</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Detox Verde.jpg" alt="Detox Verde" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Detox Verde</h3>
+            <span class="card-variante">100g</span>
+            <p>Mix detoxificante, elimina toxinas e auxilia na perda de peso.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 10,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Psyllium.webp" alt="Psyllium" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Psyllium</h3>
+            <span class="card-variante">100g</span>
+            <p>Aumenta saciedade, controla a fome e auxilia no funcionamento intestinal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Ora-pro-nóbis em Pó.jpg" alt="Ora-pro-nóbis em Pó" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Ora-pro-nóbis em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína vegetal completa, rica em aminoácidos essenciais e ferro.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Tribulus Terrestris.webp" alt="Tribulus Terrestris" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Tribulus Terrestris</h3>
+            <span class="card-variante">100g</span>
+            <p>Auxilia no ganho de massa muscular e aumento natural da testosterona.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 49,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Fibra de Maçã.webp" alt="Fibra de Maçã" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Fibra de Maçã</h3>
+            <span class="card-variante">100g</span>
+            <p>Controla a glicose e o colesterol, previne diabetes e melhora o intestino.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 8,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="farinhas">
+          <div class="card-img">
+            <img src="imagens/Glucomanana.jpg" alt="Glucomanana" loading="lazy" />
+            <span class="card-cat-pill">Farinhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Glucomanana</h3>
+            <span class="card-variante">100g</span>
+            <p>Fibra solúvel que promove saciedade e auxilia no controle do peso.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 39,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- PROTEÍNAS -->
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Albumina Clara de Ovo.jpg" alt="Albumina Clara de Ovo" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Albumina Clara de Ovo</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína de alto valor biológico. Ideal para ganho de massa muscular.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Albumina Baunilha.webp" alt="Albumina Baunilha" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Albumina Baunilha</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína de clara de ovo com sabor baunilha. Prática e nutritiva.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 16,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Super Whey.webp" alt="Super Whey" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Super Whey</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína do soro do leite concentrada, rápida absorção pós-treino.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 9,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Whey Protein Concentrado.jpg" alt="Whey Protein Concentrado" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Whey Protein Concentrado</h3>
+            <span class="card-variante">100g</span>
+            <p>Alta concentração proteica, recuperação muscular rápida e eficiente.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 19,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Creatina.jpg" alt="Creatina" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Creatina</h3>
+            <span class="card-variante">100g</span>
+            <p>Aumenta força, potência e resistência muscular durante os treinos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 42,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Arginina em Pó.webp" alt="Arginina em Pó" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Arginina em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Aminoácido que melhora o fluxo sanguíneo e performance nos treinos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 20,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Glutamina em Pó.jpg" alt="Glutamina em Pó" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Glutamina em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Aminoácido que auxilia na recuperação muscular e saúde intestinal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 20,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Taurina em Pó.jpg" alt="Taurina em Pó" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Taurina em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Aminoácido energizante, melhora o desempenho físico e mental.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 20,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/Ashwagandha Ginseng Indiano.webp" alt="Ashwagandha / Ginseng Indiano" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Ashwagandha / Ginseng Indiano</h3>
+            <span class="card-variante">100g</span>
+            <p>Adaptógeno poderoso. Reduz estresse, ansiedade e melhora vitalidade.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 39,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- Novos produtos proteínas -->
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/extrato de soja natural.webp" alt="Extrato de Soja Natural" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Extrato de Soja Natural</h3>
+            <span class="card-variante">100g</span>
+            <p>Fonte de proteína vegetal completa, isoflavonas e minerais essenciais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,80</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/extrato de soja.webp" alt="Extrato de Soja" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Extrato de Soja</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína de soja concentrada. Versátil para preparo de bebidas e receitas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/proteina isolada.jpg" alt="Proteína Isolada" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Proteína Isolada</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína de alta pureza, rápida absorção. Ideal para pós-treino e dietas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 9,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/proteina de ervilha isolada.webp" alt="Proteína de Ervilha Isolada" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Proteína de Ervilha Isolada</h3>
+            <span class="card-variante">100g</span>
+            <p>Proteína vegetal isolada de alta concentração. Ideal para veganos e atletas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 9,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="proteinas">
+          <div class="card-img">
+            <img src="imagens/levedo de cerveja.webp" alt="Levedo de Cerveja" loading="lazy" />
+            <span class="card-cat-pill">Proteínas</span>
+          </div>
+          <div class="card-body">
+            <h3>Levedo de Cerveja</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em proteínas, vitaminas do complexo B e minerais. Fortalece unhas e cabelos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 7,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- CEREAIS & OUTROS -->
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Aveia em Flocos.webp" alt="Aveia em Flocos" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Aveia em Flocos</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em fibras solúveis beta-glucanas. Reduz colesterol e dá saciedade.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,70</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Aveia Flocos Grossos.webp" alt="Aveia Flocos Grossos" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Aveia Flocos Grossos</h3>
+            <span class="card-variante">100g</span>
+            <p>Digestão mais lenta, libera energia gradual. Ótima para musculação.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 31,60</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Aveia s Glúten.webp" alt="Aveia s/ Glúten" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Aveia s/ Glúten</h3>
+            <span class="card-variante">100g</span>
+            <p>Para celíacos e intolerantes. Mantém todos os benefícios da aveia.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Granola.webp" alt="Granola" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Granola</h3>
+            <span class="card-variante">100g</span>
+            <p>Mix crocante de cereais e frutas. Nutritivo e prático para o café da manhã.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Granola Light.webp" alt="Granola Light" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Granola Light</h3>
+            <span class="card-variante">100g</span>
+            <p>Versão com menos açúcar. Ideal para dietas de emagrecimento.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Tapioca Granulada.jpg" alt="Tapioca Granulada" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Tapioca Granulada</h3>
+            <span class="card-variante">100g</span>
+            <p>Sem glúten, fonte de energia rápida. Versátil para receitas doces e salgadas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,20</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Gérmen de Trigo.jpg" alt="Gérmen de Trigo" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Gérmen de Trigo</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em vitamina E, zinco e ácido fólico. Poderoso antioxidante natural.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Sagu.webp" alt="Sagu" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Sagu</h3>
+            <span class="card-variante">100g</span>
+            <p>Amido da palmeira, sem glúten. Usado em sobremesas e preparações especiais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Leite de Arroz em Pó.webp" alt="Leite de Arroz em Pó" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Leite de Arroz em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Bebida vegetal leve e de fácil digestão. Alternativa ao leite de vaca.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 8,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Leite de Coco em Pó.webp" alt="Leite de Coco em Pó" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Leite de Coco em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Prático e versátil. Substituto do leite de coco líquido em receitas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 12,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Amido de Milho.png" alt="Amido de Milho" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Amido de Milho</h3>
+            <span class="card-variante">100g</span>
+            <p>Espessante natural sem glúten. Essencial para receitas e molhos.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/Fécula de Batata.webp" alt="Fécula de Batata" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Fécula de Batata</h3>
+            <span class="card-variante">100g</span>
+            <p>Espessante sem glúten. Ótimo para pães, bolos e receitas funcionais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 1,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- Novos cereais -->
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/granola completa.jpg" alt="Granola Completa" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Granola Completa</h3>
+            <span class="card-variante">100g</span>
+            <p>Mix completo de cereais, frutas e sementes. Nutritiva e deliciosa.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/cacau premium.jpg" alt="Cacau Premium" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Cacau Premium</h3>
+            <span class="card-variante">100g</span>
+            <p>100% puro, rico em antioxidantes e magnésio. Sabor intenso e nutritivo.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 7,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/trigo integral.jpg" alt="Trigo Integral" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Trigo Integral</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em fibras e vitaminas do complexo B. Contribui para saúde digestiva.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 0,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/leite de amendoa.webp" alt="Leite de Amêndoa" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Leite de Amêndoa</h3>
+            <span class="card-variante">100g</span>
+            <p>Bebida vegetal em pó, rica em vitamina E. Prática e sem lactose.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/xiletol.jpg" alt="Xilitol" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Xilitol</h3>
+            <span class="card-variante">100g</span>
+            <p>Adoçante natural de baixo índice glicêmico. Não prejudica os dentes.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 7,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/stevia.webp" alt="Stevia" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Stevia</h3>
+            <span class="card-variante">100g</span>
+            <p>Adoçante natural de origem vegetal. Zero calorias e sem efeitos colaterais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 19,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/agar agar.webp" alt="Ágar-Ágar" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Ágar-Ágar</h3>
+            <span class="card-variante">100g</span>
+            <p>Gelatina vegetal de algas marinhas. Substituto natural da gelatina animal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 9,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="cereais">
+          <div class="card-img">
+            <img src="imagens/goma xantana.jpg" alt="Goma Xantana" loading="lazy" />
+            <span class="card-cat-pill">Cereais</span>
+          </div>
+          <div class="card-body">
+            <h3>Goma Xantana</h3>
+            <span class="card-variante">100g</span>
+            <p>Espessante e estabilizante natural. Essencial em receitas sem glúten.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 11,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- ESPECIARIAS -->
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/Canela em Pó.jpg" alt="Canela em Pó" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Canela em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Termogênica natural, controla a glicemia e o colesterol.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/Cravo em Pó.jpg" alt="Cravo em Pó" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Cravo em Pó</h3>
+            <span class="card-variante">100g</span>
+            <p>Antisséptico natural, antioxidante poderoso e digestivo eficaz.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 6,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/Tomilho.jpg" alt="Tomilho" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Tomilho</h3>
+            <span class="card-variante">100g</span>
+            <p>Antibacteriano natural, auxilia na saúde respiratória e digestão.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/Cardamomo.jpg" alt="Cardamomo" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Cardamomo</h3>
+            <span class="card-variante">100g</span>
+            <p>Digestivo e aromático, combate mau hálito e inflamações.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 32,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/Feno Grego.jpg" alt="Feno Grego" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Feno Grego</h3>
+            <span class="card-variante">100g</span>
+            <p>Estimula a testosterona e auxilia no controle da glicemia.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/Zimbro.jpg" alt="Zimbro" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Zimbro</h3>
+            <span class="card-variante">100g</span>
+            <p>Diurético e anti-inflamatório natural, auxilia na saúde renal.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">preço na loja</span></div>
+          </div>
+        </div>
+
+        <!-- Cravo em Flor -->
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/cravo em flor.jpg" alt="Cravo em Flor" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Cravo em Flor</h3>
+            <span class="card-variante">100g</span>
+            <p>Especiaria aromática, antisséptica e digestiva. Ideal para chás e receitas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <!-- Argilas e outros -->
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/argila preta.jpg" alt="Argila Preta" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Argila Preta</h3>
+            <span class="card-variante">100g</span>
+            <p>Desintoxicante profunda, absorve impurezas e toxinas. Uso cosmético e terapêutico.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/argila verde.webp" alt="Argila Verde" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Argila Verde</h3>
+            <span class="card-variante">100g</span>
+            <p>Anti-inflamatória e cicatrizante natural. Muito usada em cosméticos e terapias.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/argila branca.jpg" alt="Argila Branca" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Argila Branca</h3>
+            <span class="card-variante">100g</span>
+            <p>Mais suave e indicada para peles sensíveis. Purifica e clareia naturalmente.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/carvão ativado.jpg" alt="Carvão Ativado" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Carvão Ativado</h3>
+            <span class="card-variante">100g</span>
+            <p>Absorve toxinas e gases. Uso interno (detox) e externo (cosmético dental).</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="especiarias">
+          <div class="card-img">
+            <img src="imagens/dolomita.jpg" alt="Dolomita" loading="lazy" />
+            <span class="card-cat-pill">Especiarias</span>
+          </div>
+          <div class="card-body">
+            <h3>Dolomita</h3>
+            <span class="card-variante">100g</span>
+            <p>Fonte natural de cálcio e magnésio. Fortalece ossos e dentes.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASTANHAS ===== -->
+  <section id="castanhas" class="produtos">
+    <div class="container">
+      <p class="section-tag center">Nosso Catálogo</p>
+      <h2 class="center">Castanhas &amp; Nozes</h2>
+      <p class="section-sub center">Castanhas selecionadas, ricas em gorduras boas e nutrientes essenciais</p>
+
+      <div class="filtros">
+        <button class="filtro active" data-cat="todos-c">Todos</button>
+        <button class="filtro" data-cat="castanhas">Castanhas</button>
+      </div>
+
+      <div class="produtos-grid">
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Nozes Mariposa.jpg" alt="Nozes Mariposa" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Nozes Mariposa</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em ômega-3, antioxidantes e gorduras boas. Aliada do coração e do cérebro.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 14,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Baru Cru.jpg" alt="Baru Cru" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Baru Cru</h3>
+            <span class="card-variante">100g</span>
+            <p>Castanha do cerrado brasileiro, rica em proteínas, fibras e ferro.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 9,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Castanha de Caju Crua.jpg" alt="Castanha de Caju Crua" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Castanha de Caju Crua</h3>
+            <span class="card-variante">100g</span>
+            <p>Fonte de zinco, magnésio e gorduras saudáveis. Versátil e nutritiva.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 12,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Castanha de Caju s Sal.jpg" alt="Castanha de Caju s/ Sal" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Castanha de Caju s/ Sal</h3>
+            <span class="card-variante">100g</span>
+            <p>Castanha de caju torrada sem sal. Prática para lanches saudáveis.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 13,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Castanha de Caju com Sal.webp" alt="Castanha de Caju com Sal" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Castanha de Caju com Sal</h3>
+            <span class="card-variante">100g</span>
+            <p>Castanha de caju torrada com sal. Crocante e saborosa.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 13,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Castanha do Pará.webp" alt="Castanha do Pará" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Castanha do Pará</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em selênio, fortalece imunidade, tireoide e saúde celular.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Macadâmia.jpg" alt="Macadâmia" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Macadâmia</h3>
+            <span class="card-variante">100g</span>
+            <p>A mais calórica das castanhas, repleta de gorduras boas e sabor suave.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 18,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Avelã s Casca.jpg" alt="Avelã s/ Casca" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Avelã s/ Casca</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em vitamina E e gorduras monoinsaturadas. Ótima para saúde cardiovascular.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 15,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Amêndoa Defumada.webp" alt="Amêndoa Defumada" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Amêndoa Defumada</h3>
+            <span class="card-variante">100g</span>
+            <p>Amêndoa com sabor defumado, rica em proteína, vitamina E e cálcio.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 13,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Amêndoa.jpg" alt="Amêndoa" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Amêndoa</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em proteínas, fibras e vitamina E. Excelente para saciedade e saúde.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 13,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Amendoim Torrado c Sal.jpg" alt="Amendoim Torrado c/ Sal" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Amendoim Torrado c/ Sal</h3>
+            <span class="card-variante">100g</span>
+            <p>Prático e saboroso, rico em proteínas e gorduras boas para o coração.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Pistache c Tempero.jpg" alt="Pistache c/ Tempero" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Pistache c/ Tempero</h3>
+            <span class="card-variante">100g</span>
+            <p>Pistache temperado com especiarias, crocante e irresistível.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 25,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="castanhas">
+          <div class="card-img">
+            <img src="imagens/Pistache.jpg" alt="Pistache" loading="lazy" />
+            <span class="card-cat-pill">Castanhas</span>
+          </div>
+          <div class="card-body">
+            <h3>Pistache</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em antioxidantes, proteínas e gorduras boas. Sabor único e marcante.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 29,00</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GRÃOS ===== -->
+  <section id="graos" class="produtos">
+    <div class="container">
+      <p class="section-tag center">Nosso Catálogo</p>
+      <h2 class="center">Grãos &amp; Cereais Especiais</h2>
+      <p class="section-sub center">Grãos nutritivos e funcionais para uma alimentação equilibrada</p>
+
+      <div class="filtros">
+        <button class="filtro active" data-cat="todos-g">Todos</button>
+        <button class="filtro" data-cat="graos">Grãos</button>
+      </div>
+
+      <div class="produtos-grid">
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Quinoa Vermelha.webp" alt="Quinoa Vermelha" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Quinoa Vermelha</h3>
+            <span class="card-variante">100g</span>
+            <p>Grão andino rico em proteínas completas, ferro e antioxidantes.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Quinoa em Grão.webp" alt="Quinoa em Grão" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Quinoa em Grão</h3>
+            <span class="card-variante">100g</span>
+            <p>Superalimento completo, fonte de proteína vegetal, fibras e minerais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 4,90</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Farinha de Quinoa.jpg" alt="Farinha de Quinoa" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Farinha de Quinoa</h3>
+            <span class="card-variante">100g</span>
+            <p>Farinha sem glúten com alto teor proteico. Ótima para panificação saudável.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,99</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Amaranto Flocos.webp" alt="Amaranto Flocos" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Amaranto Flocos</h3>
+            <span class="card-variante">100g</span>
+            <p>Cereal sem glúten, fonte de proteína, cálcio e ferro. Leve e nutritivo.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 5,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Amaranto em Grão.jpg" alt="Amaranto em Grão" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Amaranto em Grão</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em lisina, cálcio e ferro. Excelente para dietas sem glúten.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 6,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Lentilha Síria.jpg" alt="Lentilha Síria" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Lentilha Síria</h3>
+            <span class="card-variante">100g</span>
+            <p>Rica em proteínas e ferro. Cozimento rápido, ótima para sopas e saladas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 3,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Lentilha Canadense.jpg" alt="Lentilha Canadense" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Lentilha Canadense</h3>
+            <span class="card-variante">100g</span>
+            <p>Lentilha verde de cozimento rápido, rica em fibras e proteínas vegetais.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,80</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+
+        <div class="card" data-cat="graos">
+          <div class="card-img">
+            <img src="imagens/Grão de Bico.jpg" alt="Grão de Bico" loading="lazy" />
+            <span class="card-cat-pill">Grãos</span>
+          </div>
+          <div class="card-body">
+            <h3>Grão de Bico</h3>
+            <span class="card-variante">100g</span>
+            <p>Rico em proteínas, fibras e minerais. Base do homus e de diversas receitas.</p>
+            <div class="card-preco"><span class="preco-valor">R$ 2,50</span><span class="preco-unid">a cada 100g</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section id="beneficios" class="beneficios">
+    <div class="container">
+      <p class="section-tag center">Por que escolher</p>
+      <h2 class="center">Os benefícios dos<br />produtos naturais</h2>
+      <div class="benef-grid">
+        <div class="benef-card">
+          <div class="benef-icon"><i class="fas fa-heart-pulse"></i></div>
+          <h3>Saúde Cardiovascular</h3>
+          <p>Grãos e sementes reduzem o colesterol ruim e protegem o coração.</p>
+        </div>
+        <div class="benef-card">
+          <div class="benef-icon"><i class="fas fa-dumbbell"></i></div>
+          <h3>Mais Energia</h3>
+          <p>Carboidratos complexos fornecem energia de forma gradual e sustentável.</p>
+        </div>
+        <div class="benef-card">
+          <div class="benef-icon"><i class="fas fa-weight-scale"></i></div>
+          <h3>Controle de Peso</h3>
+          <p>Alto teor de fibras aumenta a saciedade e auxilia no emagrecimento.</p>
+        </div>
+        <div class="benef-card">
+          <div class="benef-icon"><i class="fas fa-bacteria"></i></div>
+          <h3>Intestino Saudável</h3>
+          <p>Fibras prebióticas alimentam as bactérias benéficas do intestino.</p>
+        </div>
+        <div class="benef-card">
+          <div class="benef-icon"><i class="fas fa-brain"></i></div>
+          <h3>Bem-estar Mental</h3>
+          <p>Nutrientes essenciais que apoiam a função cerebral e o humor.</p>
+        </div>
+        <div class="benef-card">
+          <div class="benef-icon"><i class="fas fa-shield-virus"></i></div>
+          <h3>Imunidade Forte</h3>
+          <p>Vitaminas e minerais que fortalecem as defesas naturais do corpo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANNER CTA ===== -->
+  <section class="cta-banner">
+    <div class="cta-overlay"></div>
+    <div class="cta-content">
+      <h2>Quer montar sua cesta natural?</h2>
+      <p>Entre em contato e monte o seu pedido personalizado com os melhores produtos naturais.</p>
+      <a href="#contato" class="btn btn-primary">Fazer Pedido</a>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <p class="section-tag center">Fale conosco</p>
+      <h2 class="center">Entre em Contato</h2>
+      <div class="contato-grid">
+        <div class="contato-info">
+          <h3>Informações</h3>
+          <div class="info-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/5500000000000" target="_blank">(00) 00000-0000</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Endereço</strong>
+              <span>Rua Juscelino Kubitschek 91</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Horário</strong>
+              <span>Seg–Sex: 8h às 18h | Sáb: 8h às 13h</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/emporio_dos_graos_bm/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <i class="fas fa-seedling"></i>
+        <div>
+          <span>Empório dos Grãos BM</span>
+          <small>Servindo saúde para você!</small>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Empório dos Grãos BM. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5538992193008" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ===== OVERLAY DE BUSCA ===== -->
+  <div id="searchOverlay" role="dialog" aria-modal="true" aria-label="Resultados da busca">
+    <div class="container">
+      <div class="search-overlay-header">
+        <div>
+          <h2><i class="fas fa-search"></i> Resultados</h2>
+          <span id="searchCount"></span>
+        </div>
+        <button class="btn-fechar-busca" id="btnFecharBusca"><i class="fas fa-times"></i> Fechar</button>
+      </div>
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
