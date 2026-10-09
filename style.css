@@ -1048,14 +1048,21 @@ footer {
   .beneficios { padding: 4rem 0; }
   .sobre { padding: 4rem 0; }
 
-  /* Grid de produtos — 1 coluna em mobile */
+  /* Grid de produtos — 3 colunas em mobile */
   .produtos-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .6rem;
   }
 
-  /* Cards */
-  .card-img { height: 160px; }
+  /* Cards menores */
+  .card-img { height: 100px; }
+  .card-body { padding: .7rem .6rem .8rem; }
+  .card-body h3 { font-size: .78rem; }
+  .card-body p { font-size: .7rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-variante { font-size: .62rem; padding: .15rem .5rem; }
+  .preco-valor { font-size: .95rem; }
+  .preco-unid { font-size: .65rem; }
+  .card-cat-pill { font-size: .58rem; padding: .15rem .5rem; }
 
   /* Filtros */
   .filtros { gap: .4rem; }
@@ -1085,6 +1092,8 @@ footer {
   .logo-name { font-size: .88rem; }
   .logo-slogan { font-size: .62rem; }
   .logo-icon { width: 36px; height: 36px; font-size: 1rem; }
-  .produtos-grid { grid-template-columns: 1fr; }
+  .produtos-grid { grid-template-columns: repeat(3, 1fr); gap: .4rem; }
   .filtro { font-size: .7rem; padding: .3rem .65rem; }
+  .card-img { height: 80px; }
+  .card-body h3 { font-size: .7rem; }
 }
