@@ -1048,10 +1048,10 @@ footer {
   .beneficios { padding: 4rem 0; }
   .sobre { padding: 4rem 0; }
 
-  /* Grid de produtos — 2 colunas em mobile */
+  /* Grid de produtos — 1 coluna em mobile */
   .produtos-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: .6rem;
+    grid-template-columns: 1fr !important;
+    gap: .8rem;
   }
 
   /* Cards menores */
@@ -1092,7 +1092,7 @@ footer {
   .logo-name { font-size: .88rem; }
   .logo-slogan { font-size: .62rem; }
   .logo-icon { width: 36px; height: 36px; font-size: 1rem; }
-  .produtos-grid { grid-template-columns: repeat(2, 1fr) !important; gap: .4rem; }
+  .produtos-grid { grid-template-columns: 1fr !important; gap: .8rem; }
   .filtro { font-size: .7rem; padding: .3rem .65rem; }
   .card-img { height: 80px; }
   .card-body h3 { font-size: .7rem; }
