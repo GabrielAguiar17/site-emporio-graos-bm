@@ -989,7 +989,27 @@ footer {
   .sobre-grid,
   .contato-grid { grid-template-columns: 1fr; }
 
-  .sobre-img { display: none; }
+  .sobre-img {
+    display: flex;
+    margin: 0 auto 1.5rem;
+    width: 100%;
+  }
+  .sobre-img-box {
+    width: min(76vw, 300px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .sobre-stat {
+    padding: .5rem .7rem;
+  }
+  .sobre-stat.s2 {
+    top: 8px;
+    left: 8px;
+  }
+  .sobre-stat:not(.s2) {
+    right: 8px;
+    bottom: 8px;
+  }
 
   /* Header mobile */
   .header-inner {
