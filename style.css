@@ -124,7 +124,8 @@ h2 {
 .header-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
   padding: .9rem 5%;
@@ -213,6 +214,8 @@ h2 {
 
 /* ── Barra de Busca ── */
 .search-bar {
+  margin-left: auto;
+  margin-right: 3rem;
   display: flex;
   align-items: center;
   background: rgba(255,255,255,.08);
@@ -988,11 +991,27 @@ footer {
 
   .sobre-img { display: none; }
 
+  /* Header mobile */
+  .header-inner {
+    position: relative;
+    flex-wrap: wrap;
+    gap: .6rem;
+    padding: .7rem 4%;
+  }
+
+  .logo { flex: 1; }
+
   .menu-toggle { display: flex; }
 
-  .search-bar { order: -1; width: 100%; }
+  /* Busca vai para segunda linha */
+  .search-bar {
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 10px;
+  }
   #searchInput { width: 100% !important; }
-  .search-bar { border-radius: 10px; }
 
   #nav {
     position: absolute;
@@ -1002,9 +1021,10 @@ footer {
     max-height: 0;
     overflow: hidden;
     transition: max-height .35s ease, padding .35s ease;
+    z-index: 999;
   }
   #nav.open {
-    max-height: 400px;
+    max-height: 500px;
     padding: 1rem 0 1.5rem;
   }
   #nav ul {
@@ -1012,17 +1032,59 @@ footer {
     align-items: center;
     gap: 1.2rem;
   }
-
-  .header-inner { position: relative; }
 }
 
 @media (max-width: 600px) {
-  .hero h1 { font-size: 2.2rem; }
+  /* Hero */
+  .hero { padding: 7rem 5% 4rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero-sub { font-size: .95rem; }
   .hero-btns { flex-direction: column; align-items: center; }
-  .benef-grid { grid-template-columns: 1fr; }
-  .sobre-features { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; text-align: center; }
-  .contato-form { padding: 1.5rem; }
+  .hero-badges { gap: .5rem; }
+  .badge { font-size: .75rem; padding: .35rem .8rem; }
+
+  /* Seções */
+  .produtos { padding: 4rem 0; }
+  .beneficios { padding: 4rem 0; }
+  .sobre { padding: 4rem 0; }
+
+  /* Grid de produtos — 1 coluna em mobile */
+  .produtos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Cards */
+  .card-img { height: 160px; }
+
+  /* Filtros */
   .filtros { gap: .4rem; }
-  .filtro { font-size: .78rem; padding: .35rem .9rem; }
+  .filtro { font-size: .75rem; padding: .35rem .8rem; }
+
+  /* Benefícios */
+  .benef-grid { grid-template-columns: 1fr; }
+
+  /* Sobre */
+  .sobre-features { grid-template-columns: 1fr; }
+
+  /* Contato */
+  .contato-info { padding: 1.5rem; }
+
+  /* Footer */
+  .footer-inner { flex-direction: column; text-align: center; gap: .5rem; }
+
+  /* Overlay de busca */
+  #searchOverlay { padding: 5rem 4% 2rem; }
+
+  /* Títulos */
+  h2 { font-size: 1.6rem !important; }
+  .section-tag { font-size: .75rem; }
+}
+
+@media (max-width: 400px) {
+  .logo-name { font-size: .88rem; }
+  .logo-slogan { font-size: .62rem; }
+  .logo-icon { width: 36px; height: 36px; font-size: 1rem; }
+  .produtos-grid { grid-template-columns: 1fr; }
+  .filtro { font-size: .7rem; padding: .3rem .65rem; }
 }
