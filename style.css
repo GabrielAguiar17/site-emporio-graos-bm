@@ -1083,7 +1083,7 @@ footer {
   }
   .card-body { padding: .5rem .4rem .6rem; }
   .card-body h3 { font-size: .7rem; line-height: 1.2; margin-bottom: .2rem; white-space: normal; }
-  .card-body p { display: none; }
+  .card-body p { font-size: .65rem; display: block; overflow: visible; white-space: normal; }
   .card-variante { font-size: .58rem; padding: .1rem .4rem; margin-bottom: .2rem; }
   .preco-valor { font-size: .85rem; }
   .preco-unid { font-size: .6rem; }
