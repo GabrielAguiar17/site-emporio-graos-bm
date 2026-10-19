@@ -334,8 +334,8 @@ h2 {
 .hero {
   min-height: 100vh;
   background:
-    linear-gradient(160deg, rgba(5,10,5,.82) 0%, rgba(10,30,10,.68) 50%, rgba(180,148,0,.20) 100%),
-    url('https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=1400&q=80') center/cover no-repeat;
+    linear-gradient(160deg, rgba(5,10,5,.75) 0%, rgba(10,30,10,.60) 50%, rgba(180,148,0,.15) 100%),
+    url('imagens/hero-bg.jpg') center/cover no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
